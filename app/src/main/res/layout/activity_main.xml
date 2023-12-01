@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--안에 내용을 새로 쌓게다는 뜻-->
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="0"
+        android:textColor="@color/blue"
+        android:textSize="100sp"
+        android:textStyle="bold|italic"
+        android:layout_weight="2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/idPlusButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            />
+        <Button
+            android:id="@+id/idMinusButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            />
+        <Button
+            android:id="@+id/idResetButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="초기화"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
